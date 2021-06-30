@@ -1,0 +1,21 @@
+{
+  "name": "webworker-grpc-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Oleg Shilov <me@olegshilov.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:front": "yarn workspace @webworker-grpc-test/example-front start",
+    "format": "yarn prettier --write '**/*.{css,json,json5,md,html,yaml,yml,ts,js,tsx,jsx}'"
+  },
+  "devDependencies": {
+    "@types/google-protobuf": "3.15.2",
+    "prettier": "2.3.0",
+    "typescript": "4.3.4"
+  },
+  "workspaces": [
+    "example/front",
+    "example/back",
+    "packages/*"
+  ]
+}
